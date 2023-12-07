@@ -1,0 +1,42 @@
+@baseUrl = http://localhost:3000
+
+
+# @name getAllPinyinb
+GET {{baseUrl}}/api/b
+
+
+###
+
+
+# @name addNewPinyin
+POST {{baseUrl}}/api/b
+Content-Type: application/json
+
+{
+    "word": "miro"
+}
+
+###
+
+
+# @name update
+PATCH {{baseUrl}}/api/b/17
+Content-Type: application/json
+
+{
+    "word": "miroNew"
+}
+
+
+###
+
+
+# @name remove
+DELETE {{baseUrl}}/api/b/17
+Content-Type: application/json
+
+{
+    "word": "miroNew"
+}
+
+
